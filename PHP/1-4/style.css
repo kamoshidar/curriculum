@@ -1,0 +1,201 @@
+@media screen and (min-width: 767px) {
+    .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+    width:400px;
+    height: 100px;
+    background-color: #141f40;
+}
+
+
+.left {
+    width:150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+.rightbox {
+    float:left;
+}
+
+.rightbox2 {
+    float:left;
+}
+
+.right {
+    width:150px;
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.right1 {
+    width:150px;
+    height: 100px;
+    background-color: #0093d7;
+}
+
+.left1{
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: left;
+}
+
+.down{
+    width: 250px;
+    height: 100px;
+    background-color: #8c2727;
+}
+
+.footer {
+    width:400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    /* .center {
+      margin: 0 auto;
+      width: 400px;
+}
+
+body {
+    text-align: center;
+} */
+
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+    width:300px;
+    height: 100px;
+    background-color: #141f40;
+}
+
+
+.left {
+    width:100px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+.rightbox {
+    float:left;
+}
+
+.rightbox2 {
+    float:left;
+}
+
+.right {
+    width:125px;
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.right1 {
+    width:125px;
+    height: 100px;
+    background-color: #0093d7;
+}
+
+.left1{
+    width: 75px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: left;
+}
+
+.down{
+    width: 200px;
+    height: 100px;
+    background-color: #8c2727;
+}
+
+.footer {
+    width:300px;
+    height: 100px;
+    background-color: #d98d30;
+} 
+}
+
+
+
+
+
+@media screen and (max-width: 479px) {
+div {
+    width: 150px;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+    width: 150px;
+    height: 100px;
+    background-color: #141f40;
+}
+
+
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: none;
+}
+
+.rightbox {
+    float:none;
+}
+
+.rightbox2 {
+    float:none;
+}
+
+.right {
+    width: 150px;
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.right1 {
+    width: 150px;
+    height: 100px;
+    background-color: #0093d7;
+}
+
+.left1{
+    width: 150px;
+    height: 150px;
+    background-color: #ff9e6b;
+    float: none;
+}
+
+.down{
+    width: 150px;
+    height: 100px;
+    background-color: #8c2727;
+}
+
+.footer {
+    width: 150px;
+    height: 100px;
+    background-color: #d98d30;
+} 
+}
