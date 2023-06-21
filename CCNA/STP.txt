@@ -1,0 +1,21 @@
+問1
+ルートブリッジ＝Switch３
+
+
+
+問2
+Switch1
+F0/1=DP　反対ﾎﾟｰﾄがRPのため
+F0/2=RP　速度が10Mbpsで100で最小
+
+Switch2
+F0/1=RP　Switch2とSwitch1で100MbpsとSwitch1とSwitch3で10Mbpsで100+19=119が最小
+F0/2=BP　最後まで残ったポート
+
+Switch3
+E0/1=DP  ルートブリッジのため
+E0/2=DP　ルートブリッジのため　
+
+Switch4
+E0/1=DP　Switch2とSwitch4を比較してブリッジIDが小さい方
+E0/2=RP　Switch3の反対ﾎﾟｰﾄがDPの為
