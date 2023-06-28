@@ -1,0 +1,171 @@
+@media screen and (min-width: 767px) {
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body{
+  width: 100%;
+}
+
+.center{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header{
+  height: 100px;
+  width: 400px;
+  background: #141f40;
+  position: relative;
+}
+
+.whitebox{
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: white;
+  position: absolute;
+}
+
+.minbox{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #a9004b;
+}
+  
+.minbox:last-child{
+    margin-right: 0px;
+}
+
+.left{
+  width: 150px;
+  height: 250px;
+  background: #80bfa8;
+  float: left;
+}
+
+.content{
+  width: 250px;
+  height: 250px;
+  float: left;
+  background: #8c2727;
+  position: relative;
+}
+
+.whitebox2{
+  left: 40px;
+  top: 40px;
+  position: absolute;
+}
+
+.lengbox{
+  width: 140px;
+  height: 40px;
+  border: 5px solid;
+  margin: 0px 0px 10px 0px;
+  border-color: #ffffff;
+  background: #ff863f;
+}
+
+.lengbox:last-child{
+  margin: 0px
+}
+
+.footer{
+  width: 400px;
+  height: 100px;
+  background: #d98d30;
+}
+}
+
+
+
+
+
+
+/* Iphoneの時*/
+@media screen and (max-width: 479px) {
+
+.center{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.header{
+  height: 200px;
+  width: 200px;
+  background: #141f40;
+  position: relative;
+}
+
+.whitebox{
+  top: 20px;
+  right: 70px;
+  padding: 10px;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  position: absolute;
+}
+
+.minbox{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  background: #a9004b;
+}
+
+.minbox:last-child{
+  margin-bottom: 0px;
+}
+
+.left{
+  float: none;
+  width: 200px;
+  height: 250px;
+  background: #80bfa8;
+}
+
+.content{
+  position: relative;
+  width: 200px;
+  height: 250px;
+  float: none;
+  background: #8c2727;
+}
+
+.whitebox2{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+.lengbox{
+  width: 140px;
+  height: 40px;
+  border: 5px solid;
+  margin: 0px 0px 10px 0px;
+  border-color: #ffffff;
+  background: #ff863f;
+}
+
+.lengbox:last-child{
+  margin: 0px
+}
+
+.footer{
+  width: 200px;
+  height: 100px;
+  background: #d98d30;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+}
