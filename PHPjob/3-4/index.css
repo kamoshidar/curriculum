@@ -1,0 +1,28 @@
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid white;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form {
+    text-align: center;
+  }
+
+
+.answer{
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
