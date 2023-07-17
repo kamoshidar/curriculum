@@ -27,14 +27,6 @@ function checkAnswer($selected, $index)
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>結果</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        body{
-        background-color: gray;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        }
-    </style>
 </head>
 <body class="answer">
     <p><?php echo $name; ?>さんの結果は・・・？</p>
