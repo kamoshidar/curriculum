@@ -26,28 +26,26 @@ $array2 = ["80", "PHP", "select"];
 <form action="answer.php" method="post">
     <p>お疲れ様です<?php echo $name; ?>さん</p>
     <!--フォーム2の作成 通信はPOST通信で-->
-    <?php echo "<h2>①ネットワークのポート番号は何番？</h2>\n";
-    //<--③ 問題のradioボタンを「foreach」を使って作成する-->
-    foreach ($array[0] as $value) {
-        echo "<input type=\"radio\" name=\"port\" value=" . $value . ">".$value;
-    }
-    ?>
+    <?php echo "<h2>①ネットワークのポート番号は何番？</h2>\n";?>
+    <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+    <?php foreach ($array[0] as $value) { ?>
+    <input type="radio" name="port" value="<?php echo $value; ?>"> <?php echo $value; ?>
+    <?php } ?> 
 
-    <?php echo "<h2>②Webページを作成するための言語は？</h2>\n";
-    //<!--③ 問題のradioボタンを「foreach」を使って作成する-->
-    foreach ($array[1] as $value) {
-        echo "<input type=\"radio\" name=\"web\" value=" . $value . ">" . $value;
-    }
-    ?>
 
-    <?php echo "<h2>③MySQLで情報を取得するためのコマンドは？</h2>\n";
-    //<!--③ 問題のradioボタンを「foreach」を使って作成する-->
-    foreach ($array[2] as $value) {
-        echo "<input type=\"radio\" name=\"sql\" value=" . $value . ">" . $value;
-    }
-    ?>
+    <?php echo "<h2>②Webページを作成するための言語は？</h2>\n";?>
+    <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+    <?php foreach ($array[1] as $value) { ?>
+    <input type="radio" name="web" value="<?php echo $value; ?>"> <?php echo $value; ?>
+    <?php } ?> 
+
+    <?php echo "<h2>③MySQLで情報を取得するためのコマンドは？</h2>\n";?>
+    <!--③ 問題のradioボタンを「foreach」を使って作成する-->
+    <?php foreach ($array[2] as $value) { ?>
+    <input type="radio" name="sql" value="<?php echo $value; ?>"> <?php echo $value; ?>
+    <?php } ?> 
+    
     <br>
-
     <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
     <input type="hidden" name="name" value="<?php echo $name; ?>">
     <input type="hidden" name="array2" value="<?php echo implode(",", $array2); ?>">
